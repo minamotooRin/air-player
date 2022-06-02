@@ -1,5 +1,20 @@
 let player = new Player();
 
+window.onload = function(){
+  player.loadSong()
+
+  player.getList()
+  var lis = playlist.getElementsByTagName('li');
+  for (var p = 0; p < player.songs.length; p++) {
+      lis[p].index = p
+      lis[p].onclick = function(e){
+        console.log(this.index)
+        player.loadSong(this.index);
+        player.playSong();
+      }
+  }
+}
+
 // Previous song
 function prevSong() {
   player.prev();

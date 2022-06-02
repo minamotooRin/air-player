@@ -146,3 +146,47 @@ body {
   width: 0%;
   transition: width 0.1s linear;
 }
+
+ul.playlist li img {
+  float:left;
+  width:45px;
+  height:45px;
+  margin:2px;
+  padding:2px;
+}
+
+ul.playlist {
+  list-style-type:none;
+  margin:0 auto; 
+  padding:0;
+  overflow:hidden;
+}
+
+ul.playlist li {
+  float:left;
+  width:100%;
+  border-bottom:1px solid #f3f3f3;
+}
+
+ul.playlist li span {
+  float:left;
+  color:#999;
+  width:80% ;
+  padding:5px 0;
+}
+
+ul.playlist li:hover,.active { 
+  color:#333; 
+  border-left:1px solid #58ddce;
+}
+
+ul.playlist li a {
+  float:lef t;
+  display:block;
+  color:#ccc; 
+  text-align:left;
+  padding:2px;
+  text-decoration:none;
+  line-height:22px; 
+}
+

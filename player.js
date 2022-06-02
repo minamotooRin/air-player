@@ -43,9 +43,11 @@ class Player {
       return musicContainer.classList.contains('play');
     }
     
-    loadSong() {
-    //   return (this.songs[this.songIndex], `music/${this.songs[this.songIndex]}.mp3`, `images/${this.songs[this.songIndex]}.jpg`)
-      
+    loadSong(index) {
+      if (arguments.length == 1)
+      {
+        this.songIndex = index
+      }
       title.innerText = this.songs[this.songIndex];
       audio.src = `music/${this.songs[this.songIndex]}.mp3`;
       cover.src = `images/${this.songs[this.songIndex]}.jpg`;
@@ -103,6 +105,15 @@ class Player {
 
       mode_icon.classList = "";
       mode_icon.classList.add(...this.modelist2icon[this.modelist[this.mode]]);
+    }
+
+    getList()
+    {
+        for (var p = 0; p < this.songs.length; p++) {
+            playlist.innerHTML += '<li>'+'<img src="images/'+this.songs[p]+'.jpg" alt="No cover">'
+              +'<span>'+this.songs[p]+'</span>'
+            //   +'<a href="#">'+''+this.songer[p]+'</a><li>';
+        };
     }
   }
   

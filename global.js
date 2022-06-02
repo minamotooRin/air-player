@@ -11,7 +11,9 @@ const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const modeBtn = document.getElementById('mode');
 
-const progress = document.getElementById('progress');
+const progress  = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
-const currTime = document.querySelector('#currTime');
-const durTime = document.querySelector('#durTime');
+const currTime  = document.querySelector('#currTime');
+const durTime   = document.querySelector('#durTime');
+
+const playlist  = document.getElementById("playlist");
