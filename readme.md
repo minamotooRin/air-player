@@ -4,6 +4,6 @@ Create beautiful UI to play music stored in the "music folder" using the HTML5 a
 
 ## TODO
 
-- Songs list.
+- volume bar.
 - Lyrics.
 - Automatically adding songs.

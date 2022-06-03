@@ -8,7 +8,7 @@ body {
   background-image: linear-gradient(
     0deg,
     rgba(247, 247, 247, 1) 23.8%,
-    rgba(252, 221, 221, 1) 92%
+    rgb(150, 167, 246) 92%
   );
   height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@ body {
 .music-container {
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+  box-shadow: 0 20px 20px 0 rgba(169, 177, 252, 0.6);
   display: flex;
   padding: 20px 30px;
   position: relative;
@@ -147,19 +147,12 @@ body {
   transition: width 0.1s linear;
 }
 
-ul.playlist li img {
-  float:left;
-  width:45px;
-  height:45px;
-  margin:2px;
-  padding:2px;
-}
-
 ul.playlist {
   list-style-type:none;
   margin:0 auto; 
   padding:0;
   overflow:hidden;
+  /* display:none; */
 }
 
 ul.playlist li {
@@ -168,16 +161,24 @@ ul.playlist li {
   border-bottom:1px solid #f3f3f3;
 }
 
+ul.playlist li:hover,.active { 
+  color:#333; 
+  border-left:1px solid #58ddce;
+}
+
+ul.playlist li img {
+  float:left;
+  width:45px;
+  height:45px;
+  margin:2px;
+  padding:2px;
+}
+
 ul.playlist li span {
   float:left;
   color:#999;
   width:80% ;
   padding:5px 0;
-}
-
-ul.playlist li:hover,.active { 
-  color:#333; 
-  border-left:1px solid #58ddce;
 }
 
 ul.playlist li a {
@@ -189,4 +190,3 @@ ul.playlist li a {
   text-decoration:none;
   line-height:22px; 
 }
-

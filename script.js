@@ -13,6 +13,7 @@ window.onload = function(){
         player.playSong();
       }
   }
+  
 }
 
 // Previous song
@@ -40,6 +41,10 @@ function updateProgress(e) {
 // Set progress bar
 function setProgress(e) {
   audio.currentTime = (e.offsetX / this.clientWidth) * audio.duration;
+}
+
+function setVolume(e){
+  curr_track.volume = volume_slider.value / 100;
 }
 
 // Event listeners
